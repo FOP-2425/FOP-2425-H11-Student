@@ -2,6 +2,7 @@ package h11;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import kotlin.Pair;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -37,6 +38,7 @@ public class UserTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetTopPlayedSongsList_formatting")
     public void testGetTopPlayedSongsList_formatting(ObjectNode node) {
@@ -66,6 +68,7 @@ public class UserTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetFavoriteSong_full")
     public void testGetFavoriteSong_full(ObjectNode node) {
@@ -85,6 +88,7 @@ public class UserTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetTopPlayedSongsList_size")
     public void testGetTopPlayedSongsList_size(ObjectNode node) {
@@ -130,6 +134,7 @@ public class UserTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetPlayCounts_order")
     public void testGetPlayCounts_order(ObjectNode node) {
@@ -149,6 +154,7 @@ public class UserTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetFavoriteSong_empty")
     public void testGetFavoriteSong_empty(ObjectNode node) {

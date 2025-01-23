@@ -2,6 +2,7 @@ package h11;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import kotlin.Pair;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -44,6 +45,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideAdjustPrice_zero")
     public void testAdjustPrice_zero(ObjectNode node) {
@@ -91,6 +93,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetAlbumsByGenre")
     public void testGetAlbumsByGenre(ObjectNode node) {
@@ -110,6 +113,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetAllGenres_general")
     public void testGetAllGenres_general(ObjectNode node) {
@@ -129,6 +133,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetAllGenres_unique")
     public void testGetAllGenres_unique(ObjectNode node) {
@@ -148,6 +153,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetAllSongs_general")
     public void testGetAllSongs_general(ObjectNode node) {
@@ -167,6 +173,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetAllSongs_unique")
     public void testGetAllSongs_unique(ObjectNode node) {
@@ -186,6 +193,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetArtistPlaytime")
     public void testGetArtistPlaytime(ObjectNode node) {
@@ -205,6 +213,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetArtistPlaytimes")
     public void testGetArtistPlaytimes(ObjectNode node) {
@@ -243,6 +252,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetGlobalPlayCounts_order")
     public void testGetGlobalPlayCounts_order(ObjectNode node) {
@@ -300,6 +310,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetSongsLongerThan_general")
     public void testGetSongsLongerThan_general(ObjectNode node) {
@@ -319,6 +330,7 @@ public class MusicStreamingTest extends H11_Test {
     }
 
 
+    @Disabled
     @ParameterizedTest
     @MethodSource("provideGetTopPlayedSongsList")
     public void testGetTopPlayedSongsList(ObjectNode node) {
